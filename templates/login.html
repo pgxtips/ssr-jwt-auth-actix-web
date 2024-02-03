@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Home</h1>
+<form onsubmit="handleLogin(event)"> 
+    <input type="text" name="username" placeholder="Username">
+    <input type="text" name="password" placeholder="Password">
+    <input type="submit" value="Submit">
+</form>
+<button onclick="removeJWT()">Remote JWT</button>
+{% endblock %}
+
